@@ -54,7 +54,7 @@ $(document).ready(function() {
     $(".game").show();
   });
 
-  $("#diceRoll").click(function(event) {
+  $("#Roll").click(function(event) {
     event.preventDefault();
     $("#result").show();
     var randomRoll = (1 + Math.floor(Math.random() * 6));
