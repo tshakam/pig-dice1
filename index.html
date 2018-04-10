@@ -3,16 +3,121 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
     <script src="js/JQUERY.js"></script>
-    <script src="js/scripts.js"></script>
-    <title> Weather Forecast</title>
+    <script src="js/script.js"></script>
+    <title> PIG DICES</title>
   </head>
 
   <body>
     <div class="container-fluid">
+    <!--header-->
      <div id="header">
        <img id="logoBig" src="img/pig.png" alt="company logo"></img>
        <h1><strong>WELCOME TO PIG DICE GAMES</strong></h1>
-     </div>
+
+    <!--landing page that incljdes rules-->
+    <div class="rules">
+      <h1>How to play the games</h1>
+      <h3>Roll the dice, first one to get to 100 wins!!</h3>
+        <ul>
+          <li>click the roll dice button to roll virtual dice</li>
+          <li>Unlimited chances for the player until they roll a 1</li>
+          <li>Click the hold button to save the accumulated number</li>
+          <li>If player rolls figure 1 all unheld numbers go back to zero</li>
+        </ul>
+        <h3>Outwit your friends!!</h3>
     </div>
+    <div id="detail" class="section1">
+        <div class="container header header1">
+          <form id="player-details">
+            <div class="form-group">
+              <label for="player1"><h2>Player 1</h2></label>
+              <input id="player1" required class="player1Name form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="player2"><h2>Player 2</h2></label>
+              <input id="player2" required class="player2Name form-control" type="text">
+            </div>
+            <br>
+            <a href="#names"><input type="image" src="img/assets/save.png" name="saveForm" class="btTxt submit" id="saveForm" /></a>
+          </form>
+        </div>
+    </div>
+    </div>
+    <div class="game">
+      <div id="names">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <h3><span id="player1Name"></span> Score: <span id="player1TotalScore"></span></h3>
+          </div>
+          <div class="col-md-5">
+            <h3><span id="player2Name"></span> Score: <span id="player2TotalScore"></span></h3>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+      <br>
+
+      <!--game records-->
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <center>
+            <h3 id="player1Display"></h3>
+            <h3 id="player2Display"></h3></div>
+        </center>
+        <div class="col-md-1"></div>
+      </div>
+
+
+      <div id="dice">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <center>
+              <button type="submit" id="diceRoll">Roll</button>
+            </center>
+          </div>
+          <div class="col-md-4">
+            <center>
+              <button type="submit" id="hold">Hold</button>
+            </center>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+
+      <!--results  -->
+      <div class="row">
+        <center>
+          <h3><span id="result"></span></h3>
+        </center>
+      </div>
+
+      <div class="row" id="playerTotal">
+        <center>
+          <h3>Total</h3>
+          <h3><span id="totaltotal"></span></h3>
+        </center>
+      </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="foot">
+
+          </section>
+    </div>
+    <!-- footer -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+
+  </html>
+
+
   </body>
