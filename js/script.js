@@ -1,9 +1,3 @@
-$(document).ready(function() {
-  $(".start").click(function() {
-
-    $(".rules").toggle();
-  });
-});
 
 $(document).ready(function() {
   $(".next").click(function() {
@@ -67,7 +61,6 @@ $(document).ready(function() {
     }
   });
 
-  // winner
   $("#hold").click(function(event) {
     changePlayers();
     if (playersArray[0].score >= 100) {
@@ -78,8 +71,6 @@ $(document).ready(function() {
       document.location.reload(true);
     }
   });
-
-  // fxns
   function showNamesAndScores() {
     $("#player1Name").text(playersArray[0].playerName);
     $("#player2Name").text(playersArray[1].playerName);
