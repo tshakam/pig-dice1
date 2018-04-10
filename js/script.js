@@ -10,7 +10,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("#saveForm").click(function() {
 
-    $(".game").toggle();
+    $(".gameplay").toggle();
 
   });
 });
@@ -45,7 +45,7 @@ $(document).ready(function() {
     $("#player1Display").text(playersArray[0].playerName).show();
     showNamesAndScores();
     $("form").hide();
-    $(".game").show();
+    $(".gameplay").show();
   });
 
   $("#Roll").click(function(event) {
