@@ -64,10 +64,10 @@ $(document).ready(function() {
   $("#hold").click(function(event) {
     changePlayers();
     if (playersArray[0].score >= 100) {
-      alert(playersArray[0].playerName + "wins!!");
+      alert(playersArray[0].playerName + "win");
       document.location.reload(true);
     } else if (playersArray[1].score >= 100) {
-      alert(playersArray[1].playerName + "wins!!")
+      alert(playersArray[1].playerName + "win")
       document.location.reload(true);
     }
   });
@@ -84,7 +84,7 @@ $(document).ready(function() {
       turnRollArray = [0];
       $("#totaltotal").text(turnRollArray);
       setTimeout(function() {
-        alert("You rolled a 1. Sorry bruh!");
+        alert("kill yourself with your one!");
       }, 50);
       setTimeout(function() {
         $("#player2Display").text(playersArray[1].playerName).show();
@@ -95,7 +95,7 @@ $(document).ready(function() {
       turnRollArray = [0];
       $("#totaltotal").text(turnRollArray);
       setTimeout(function() {
-        alert("You rolled a 1. Sorry bruh!");
+        alert("kill yourself with your one!");
       }, 50);
       setTimeout(function() {
         $("#player1Display").text(playersArray[0].playerName).show();
@@ -108,7 +108,7 @@ $(document).ready(function() {
   function changePlayers() {
     if ($("#player1Display").is(":visible")) {
       playersArray[0].score = (playersArray[0].score += turnRollArray.sum());
-      alert("Congrats bruh!" + " You got " + turnRollArray.sum() + " points!");
+      alert("Hooraaay" + " You got " + turnRollArray.sum() + " points!");
       turnRollArray = [0];
       $("#totaltotal").text(turnRollArray)
       $("#player1Display").hide();
@@ -116,7 +116,7 @@ $(document).ready(function() {
       console.log(playersArray[0].score);
       showNamesAndScores();
     } else {
-      alert("Congrats bruh!" + " You got " + turnRollArray.sum() + " points!");
+      alert("Hooraaay" + " You got " + turnRollArray.sum() + " points!");
       playersArray[1].score = (playersArray[1].score += turnRollArray.sum());
       turnRollArray = [0];
       $("#totaltotal").text(turnRollArray)
