@@ -1,5 +1,4 @@
 html{
-  background-color: #FADBD8;
   text-align: center;
 }
 #header{
@@ -8,4 +7,25 @@ html{
 }
 .gameplay {
   display: none;
+}
+body{
+  background-color: #FADBD8;
+
+}
+.rules{
+text-decoration:underline;
+text-decoration-style: wavy;
+text-decoration-color: #A98B80;
+}
+
+.btn {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background: transparent
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
